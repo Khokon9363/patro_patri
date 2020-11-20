@@ -22,7 +22,8 @@ class MainMenuController extends Controller
         $main_menu = MainMenu::find($request->id);
         $main_menu->main_menu = $request->main_menu;
         $main_menu->save();
-
-        return redirect()->back()->with('success','Selected menu updated successfully');
+        
+        \Toastr::success('Selected menu updated successfully','Success');
+        return redirect()->back();
     }
 }

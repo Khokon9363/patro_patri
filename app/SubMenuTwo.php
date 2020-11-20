@@ -6,5 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class SubMenuTwo extends Model
 {
-    //
+    public function subMenu()
+    {
+        return $this->belongsTo(SubMenu::class,'sub_menu_id','id');
+    }
 }

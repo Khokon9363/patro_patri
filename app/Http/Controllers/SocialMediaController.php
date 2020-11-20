@@ -22,7 +22,9 @@ class SocialMediaController extends Controller
             $socialMedia->instragram = $request->instragram;
             $socialMedia->linkedin   = $request->linkedin;
             $socialMedia->save();
-            return redirect()->back()->with('success','Social media links Saved successfully');
+
+            \Toastr::success('Social media links Saved successfully','Success');
+            return redirect()->back();
         }else{
             $socialMedia             = SocialMedia::find($request->id);
             $socialMedia->facebook   = $request->facebook;
@@ -31,7 +33,9 @@ class SocialMediaController extends Controller
             $socialMedia->instragram = $request->instragram;
             $socialMedia->linkedin   = $request->linkedin;
             $socialMedia->save();
-            return redirect()->back()->with('success','Social media links updated successfully');
+
+            \Toastr::success('Social media links updated successfully','Success');
+            return redirect()->back();
         }
     }
     

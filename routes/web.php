@@ -33,5 +33,8 @@ Route::prefix('admin')->group(function () {
     Route::get('/delete/slider/{id}','SliderController@destroy');
     Route::post('update/main_menu','MainMenuController@update');
     Route::post('store/sub_menu','SubMenuController@store');
+    Route::get('delete/sub_menu/{id}','SubMenuController@destroy');
+    Route::post('store/sub_menu_two','SubMenuTwoController@store');
+    Route::post('delete/sub_menu_two/{id}','SubMenuTwoController@destroy');
 
 });

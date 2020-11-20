@@ -9,13 +9,13 @@
               <form action="store/sub_menu" method="POST">
               @csrf
                 <div class="form-group row">
-                    <select name="main_menu_id" class="form-control" style="width: 30%;">
+                    <select name="main_menu_id" required class="form-control" style="width: 30%;">
                         <option disabled selected>--Select main menu--</option>
                         @foreach($main_menus as $main_menu)
                         <option value="{{ $main_menu->id }}">{{ $main_menu->main_menu }}</option>
                         @endforeach
                     </select>
-                    <input type="text" name="sub_menu" style="width: 50%;" class="ml-2 mr-2 form-control" placeholder="Write here a sub-menu">
+                    <input type="text" required name="sub_menu" style="width: 50%;" class="ml-2 mr-2 form-control" placeholder="Write here a sub-menu">
                     <input type="submit" class="btn btn-success" value="Save">
                 </div>
               </form>
@@ -36,7 +36,7 @@
                 <th scope="row">{{ $key+1 }}</th>
                 <td>{{ $sub_menu->mainMenu->main_menu }}</td>
                 <td>{{ $sub_menu->sub_menu }}</td>
-                <td><a href="" class="btn btn-danger btn-sm">Delete</a></td>
+                <td><a href="delete/sub_menu/{{ $sub_menu->id }}" onclick="return confirm('Are you sure ?')" class="btn btn-danger btn-sm">Delete</a></td>
                 </tr>
               @endforeach
             </tbody>

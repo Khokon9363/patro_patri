@@ -35,6 +35,7 @@ class SliderController extends Controller
     public function destroy($id)
     {
         Slider::destroy($id);
-        return redirect()->back()->with('delete','Slider image deleted successfully');
+        \Toastr::warning('Slider image deleted successfully','Success');
+        return redirect()->back();
     }
 }

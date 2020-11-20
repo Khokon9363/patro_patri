@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -33,9 +34,25 @@ class HomeController extends Controller
     public function update(Request $request)
     {
         if($request->password === $request->password_confirmation){
-
+            if($request->password === ''){
+                 $user = User::find(Auth::user()->id);
+                 $user->name = $request->name;
+                 $user->email = $request->email;
+                 $user->save();
+                 \Toastr::success('Profile updated successfully without password','Success');
+                 return redirect()->back();
+            }else{
+                 $user = User::find(Auth::user()->id);
+                 $user->name = $request->name;
+                 $user->email = $request->email;
+                 $user->password = bcrypt($request->password);
+                 $user->save();
+                 \Toastr::success('Profile updated successfully with password','Success');
+                 return redirect()->back();
+            }
         }else{
-            return redirect()->back()->with('error','Password and Confirm Password does not match');
+            \Toastr::warning('Password and Confirm Password does not match','Success');
+            return redirect()->back();
         }
     }
 }

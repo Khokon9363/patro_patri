@@ -10,4 +10,8 @@ class SubMenu extends Model
     {
         return $this->belongsTo(MainMenu::class, 'main_menu_id', 'id');
     }
+    public function subMenuTwo()
+    {
+        return $this->hasMany(SubMenuTwo::class);
+    }
 }

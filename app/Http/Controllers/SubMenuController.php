@@ -25,7 +25,13 @@ class SubMenuController extends Controller
         $subMenu->sub_menu = $request->sub_menu;
         $subMenu->main_menu_id = $request->main_menu_id;
         $subMenu->save();
-        \Toastr::success('Sub menu saved successfully', 'success');
+        \Toastr::success('Sub menu saved successfully', 'Success');
+        return redirect()->back();
+    }
+    public function destroy($id)
+    {
+        SubMenu::destroy($id);
+        \Toastr::warning('Sub menu deleted successfully','Success');
         return redirect()->back();
     }
 }

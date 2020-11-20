@@ -6,16 +6,16 @@
      <div class="col-sm-8 m-auto">
         <div class="card" style="box-shadow: 10px 10px 10px black;">
            <div class="card-body">
-              <form action="">
+              <form action="store/sub_menu_two" method="POST">
+              @csrf
                 <div class="form-group row">
-                    <select name="" id="" class="form-control" style="width: 30%;">
-                        <option value="">XYZ</option>
-                        <option value="">XYZ</option>
-                        <option value="">XYZ</option>
-                        <option value="">XYZ</option>
-                        <option value="">XYZ</option>
+                    <select name="sub_menu_id" class="form-control" style="width: 30%;">
+                        <option disabled selected>--Select a sub menu--</option>
+                        @foreach($subMenu as $subMenu)
+                        <option value="{{ $subMenu->id }}">{{ $subMenu->sub_menu }}</option>
+                        @endforeach
                     </select>
-                    <input type="text" style="width: 50%;" class="ml-2 mr-2 form-control" placeholder="Write here a second sub-menu">
+                    <input type="text" name="sub_menu_two" required style="width: 50%;" class="ml-2 mr-2 form-control" placeholder="Write here a second sub-menu">
                     <input type="submit" class="btn btn-success" value="Save">
                 </div>
               </form>
@@ -31,12 +31,18 @@
                 </tr>
             </thead>
             <tbody>
+              @foreach($subMenusTwo as $key => $subMenusTwo)
                 <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td><a href="" class="btn btn-danger btn-sm">Delete</a></td>
+                <th scope="row">{{ ++$key }}</th>
+                <td>
+                  @if(!empty($subMenusTwo->subMenu->sub_menu)) 
+                  {{ $subMenusTwo->subMenu->sub_menu }}
+                  @endif
+                </td>
+                <td>{{ $subMenusTwo->sub_menu_two }}</td>
+                <td><a href="delete/sub_menu_two/{{ $subMenusTwo->id }}" class="btn btn-danger btn-sm">Delete</a></td>
                 </tr>
+              @endforeach
             </tbody>
             </table>
 
