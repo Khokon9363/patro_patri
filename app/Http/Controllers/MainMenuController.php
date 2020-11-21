@@ -14,7 +14,7 @@ class MainMenuController extends Controller
     
     public function show(Request $request)
     {   
-        $main_menus = MainMenu::orderBy('id','DESC')->get();
+        $main_menus = MainMenu::all();
         return view('admin.manage_mainmenu',compact('main_menus'));
     }
     public function update(Request $request)

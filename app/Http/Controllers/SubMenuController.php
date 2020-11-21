@@ -15,7 +15,7 @@ class SubMenuController extends Controller
     
     public function show()
     {   
-        $main_menus = MainMenu::all();
+        $main_menus = MainMenu::where('id','!=','1')->where('id','!=','2')->get();
         $sub_menus = SubMenu::with('mainMenu')->orderBy('id','DESC')->get();
         return view('admin.manage_submenu',compact('sub_menus','main_menus'));
     }
