@@ -14,4 +14,14 @@ class FrontEndController extends Controller
         $sliders = Slider::all();
         return view('frontEnd.front',compact('social','sliders'));
     }
+    public function register()
+    {   
+        $social = SocialMedia::first();
+        return view('frontEnd.register',compact('social'));
+    }
+    public function login()
+    {   
+        $social = SocialMedia::first();
+        return view('frontEnd.login',compact('social'));
+    }
 }

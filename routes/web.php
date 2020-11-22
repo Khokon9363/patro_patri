@@ -11,7 +11,9 @@
 |
 */
 
-Route::get('/','FrontEndController@frontEnd');
+Route::get('/','FrontEndController@frontEnd')->name('/');
+Route::get('customer_register','FrontEndController@register');
+Route::get('customer_login','FrontEndController@login')->name('customer_login');
 
 Auth::routes(['register'=>true]);
 

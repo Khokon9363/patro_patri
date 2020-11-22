@@ -34,7 +34,7 @@ class HomeController extends Controller
     public function update(Request $request)
     {
         if($request->password === $request->password_confirmation){
-            if($request->password === ''){
+            if($request->password === null){
                  $user = User::find(Auth::user()->id);
                  $user->name = $request->name;
                  $user->email = $request->email;
