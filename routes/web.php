@@ -20,6 +20,9 @@ Auth::routes(['register'=>true]);
 Route::prefix('admin')->group(function () {
 
     Route::get('/dashboard','HomeController@index');
+    Route::get('/manage-service','HomeController@services');
+    Route::post('/service/store','HomeController@serviceStore');
+    Route::get('/service/delete/{service}','HomeController@serviceDelete');
     Route::get('/profile','HomeController@profile');
     Route::post('update/profile','HomeController@update');
     Route::get('/manage_mainmenu','MainMenuController@show');

@@ -14,4 +14,9 @@ class SubMenu extends Model
     {
         return $this->hasMany(SubMenuTwo::class);
     }
+
+    public function service()
+    {
+        return $this->belongsTo(Service::class);
+    }
 }
