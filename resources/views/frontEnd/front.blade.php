@@ -39,74 +39,46 @@
                             <div class="navbar-inner">
                                 <div class="navbar-collapse collapse">
                                     <ul id="menu-main-menu-2" class="nav">
+                                        @foreach($firstMenus as $menu)
                                         <li class="menu-item menu-item-home current-menu-item page_item page-item-19 current_page_item">
-                                            <a href=""><span>Home</span></a>
+                                            <a href=""><span style="color: red">{{ $menu['main_menu'] }}</span></a>
                                         </li>
-                                        <li class="menu-item">
-                                            <a href="about"><span>About us</span></a>
-                                        </li>
+                                        @endforeach
+                                        @foreach($galleryMenus as $galleryMenu)
                                         <li class="menu-item menu-item-has-children">
-                                            <a href="index.html"><span>Gallery</span></a>
+                                            <a href="index.html"><span>{{ $galleryMenu->main_menu }}</span></a>
                                             <ul class="sub-menu megamenu-column-1 level-0">
-                                                <li class="menu-item menu-item-has-children">
-                                                    <a href="#">Bride Collection</a>
-                                                    <ul class="sub-menu level-1">
-                                                        <li class="menu-item">
-                                                            <a href="">Bridal Dress</a>
-                                                            <a href="">Bridal Ornaments</a>
-                                                            <a href="">Bridal Shoes</a>
-                                                            <a href="">Groom Cosmetics</a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li class="menu-item menu-item-has-children">
-                                                    <a href="#">Groom Collection</a>
-                                                    <ul class="sub-menu level-1">
-                                                        <li class="menu-item">
-                                                            <a href="">Groom Dress</a>
-                                                            <a href="">Groom Ornaments</a>
-                                                            <a href="">Groom Shoes</a>
-                                                            <a href="">Groom Cosmetics</a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
+                                                @foreach($galleryMenu->subMenu as $sub_manu)
+                                                    <li class="menu-item menu-item-has-children">
+                                                        <a href="#">{{ $sub_manu->sub_menu }}</a>
+                                                        <ul class="sub-menu level-1">
+                                                            <li class="menu-item">
+                                                                @foreach($sub_manu->subMenuTwo as $subMenuTwo)
+                                                                <a href="">{{ $subMenuTwo->sub_menu_two }}</a>
+                                                                @endforeach
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                @endforeach
                                             </ul>
                                         </li>
+                                        @endforeach
+                                        @foreach($menus as $menu)
                                         <li class="menu-item menu-item-has-children">
-                                            <a href="index.html"><span>Services</span></a>
+                                            <a href="index.html"><span>{{ $menu->main_menu }}</span></a>
                                             <ul class="sub-menu">
                                                 <li class="menu-item">
-                                                    <a href="">Car rent & Decoration</a>
-                                                    <a href="">Stage Decoratiom</a>
-                                                    <a href="">Holud Dala prepararion</a>
-                                                    <a href="">Event Management</a>
+                                                    @foreach($menu->subMenu as $subMenu)
+                                                    <a href="">{{ $subMenu->sub_menu }}</a>
+                                                    @endforeach
                                                 </li>
                                             </ul>
                                         </li>
-                                        <li class="menu-item menu-item-has-children">
-                                            <a href="index.html"><span>Testmonials</span></a>
-                                            <ul class="sub-menu megamenu-column-1 level-0">
-                                                <li class="menu-item">
-                                                    <a href="">Bride Testimonial</a>
-                                                </li>
-                                                <li class="menu-item">
-                                                    <a href="">Groom Testimonial</a>
-                                                </li>
-                                            </ul>
-                                        </li> 
-                                        <li class="menu-item menu-item-has-children">
-                                            <a href="index.html"><span>offers</span></a>
-                                            <ul class="sub-menu">
-                                                <li class="menu-item">
-                                                    <a href="index.html">Summer Offer</a>
-                                                    <a href="index.html">Winter Offer</a>
-                                                </li>
-                                            </ul>
-                                        </li>
+                                        @endforeach
+
                                         <li class="menu-item menu-item-home current-menu-item page_item page-item-19 current_page_item">
                                             <a href="index.html"><span>Login</span></a>
                                         </li>
-
                                     </ul>
                                 </div>
                             </div>
@@ -119,7 +91,7 @@
 
 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
-    
+
   @if(!empty($sliders))
     @foreach($sliders as $key => $slider)
         <div class="carousel-item @if($key == 1) {{ 'active' }} @endif">
@@ -129,7 +101,7 @@
   @else
   <h1 class="text-danger text-center">No Slider Image found</h1>
   @endif
-  
+
 </div>
   <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -155,10 +127,10 @@
    </div>
    <div id="slideshow-r" class="col-md-4">
    <div style="box-shadow: 0 0 20px rgba(0,0,0,0.4);border-radius:5px;font-size: 20px;text-align:center;background: #ece6ec82;padding:15px;">
-    <strong style="color: red;" id="age">55</strong> 
-       years old 
-    <strong style="color: red;" id="userStatus">Seperated man</strong> 
-       just registered from 
+    <strong style="color: red;" id="age">55</strong>
+       years old
+    <strong style="color: red;" id="userStatus">Seperated man</strong>
+       just registered from
     <strong style="color: red;" id="country">Georgia</strong>
    </div>
    </div>
@@ -174,7 +146,7 @@
         country.innerHTML    = countries[Math.floor(Math.random() * 206)];
         age.innerHTML        = ages[Math.floor(Math.random() * 26)];
         userStatus.innerHTML = hisStatus[Math.floor(Math.random() * 4)];
-    },100)    
+    },100)
 </script>
 
  <div class="row">
@@ -297,7 +269,7 @@
         </div>
     </div>
 
- </div>    
+ </div>
 
 </div>
 </div>
@@ -305,7 +277,7 @@
                         <div class="vc_row-full-width vc_clearfix" style="margin-top: 80px;"></div>
 
                         <div class="vc_row wpb_row vc_row-fluid vc_custom_1493643957724">
-                            
+
                             <div class="wpb_column vc_column_container vc_col-sm-3 vc_col-has-fill">
                                 <div class="vc_column-inner vc_custom_1497275312691">
                                     <div class="wpb_wrapper">
@@ -315,11 +287,11 @@
                                             <h5 class="mgt-counter-title">Never Merried</h5>
                                      			<div class="count">
                                      				<span>Male</span><br>
-                                     				<span style="color: red">000</span>	
+                                     				<span style="color: red">000</span>
                                      			</div>
                                      		    <div class="count">
                                      				<span>Female</span><br>
-                                     				<span style="color: red">000</span>	
+                                     				<span style="color: red">000</span>
                                      			</div>
                                         </div>
                                     </div>
@@ -334,11 +306,11 @@
                                             <h5 class="mgt-counter-title">Divorced</h5>
                                      			<div class="count">
                                      				<span>Male</span><br>
-                                     				<span style="color: red">000</span>	
+                                     				<span style="color: red">000</span>
                                      			</div>
                                      		    <div class="count">
                                      				<span>Female</span><br>
-                                     				<span style="color: red">000</span>	
+                                     				<span style="color: red">000</span>
                                      			</div>
                                         </div>
                                     </div>
@@ -353,11 +325,11 @@
                                             <h5 class="mgt-counter-title">Widowed</h5>
                                      			<div class="count">
                                      				<span>Male</span><br>
-                                     				<span style="color: red">000</span>	
+                                     				<span style="color: red">000</span>
                                      			</div>
                                      		    <div class="count">
                                      				<span>Female</span><br>
-                                     				<span style="color: red">000</span>	
+                                     				<span style="color: red">000</span>
                                      			</div>
                                         </div>
                                     </div>
@@ -372,11 +344,11 @@
                                             <h5 class="mgt-counter-title">Separated</h5>
                                      			<div class="count">
                                      				<span>Male</span><br>
-                                     				<span style="color: red">000</span>	
+                                     				<span style="color: red">000</span>
                                      			</div>
                                      		    <div class="count">
                                      				<span>Female</span><br>
-                                     				<span style="color: red">000</span>	
+                                     				<span style="color: red">000</span>
                                      			</div>
                                         </div>
                                     </div>
@@ -391,17 +363,17 @@
                                             <h5 class="mgt-counter-title">Married</h5>
                                      			<div class="count">
                                      				<span>Male</span><br>
-                                     				<span style="color: red">000</span>	
+                                     				<span style="color: red">000</span>
                                      			</div>
                                      		    <div class="count">
                                      				<span>Female</span><br>
-                                     				<span style="color: red">000</span>	
+                                     				<span style="color: red">000</span>
                                      			</div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            
+
                         </div>
                         <div class="vc_row-full-width vc_clearfix"></div>
                         <div class="vc_row-full-width vc_clearfix"></div>
@@ -436,7 +408,7 @@
                                                     class="mgt-promo-block animated black-text text-color-hover-white cover-image no-darken mgt-promo-block-22600548"
                                                     data-style="background-color: #f5f5f5;background-image: url(front/upload/Dress.jpg);background-repeat: no-repeat;height: 350px;"
                                                 >
-                                          
+
                                                 </div>
                                             </div>
                                         </div>
@@ -446,14 +418,14 @@
                             <div class="wpb_column vc_column_container vc_col-sm-4">
                                 <div class="vc_column-inner">
                                     <div class="wpb_wrapper">
-                  
+
                                         <div class="mgt-promo-block-container wpb_content_element wpb_animate_when_almost_visible wpb_fadeInUp fadeInUp">
                                             <div class="mgt-promo-block-wrapper mgt-promo-block-shadow mgt-promo-block-hover">
                                                 <div
                                                     class="mgt-promo-block animated black-text text-color-hover-white cover-image no-darken mgt-promo-block-67995799"
                                                     data-style="background-color: #f5f5f5;background-image: url(front/upload/ornaments.jpeg);background-repeat: no-repeat;height: 350px;"
                                                 >
-                                             
+
                                                 </div>
                                             </div>
                                         </div>
@@ -511,7 +483,7 @@
                                                     class="mgt-promo-block animated black-text text-color-hover-white cover-image no-darken mgt-promo-block-22600548"
                                                     data-style="background-color: #f5f5f5;background-image: url(front/upload/panjabi.jpg);background-repeat: no-repeat;height: 350px;"
                                                 >
-                                          
+
                                                 </div>
                                             </div>
                                         </div>
@@ -521,14 +493,14 @@
                             <div class="wpb_column vc_column_container vc_col-sm-4">
                                 <div class="vc_column-inner">
                                     <div class="wpb_wrapper">
-                  
+
                                         <div class="mgt-promo-block-container wpb_content_element wpb_animate_when_almost_visible wpb_fadeInUp fadeInUp">
                                             <div class="mgt-promo-block-wrapper mgt-promo-block-shadow mgt-promo-block-hover">
                                                 <div
                                                     class="mgt-promo-block animated black-text text-color-hover-white cover-image no-darken mgt-promo-block-67995799"
                                                     data-style="background-color: #f5f5f5;background-image: url(front/upload/indian-groom-footwear.jpg);background-repeat: no-repeat;height: 350px;"
                                                 >
-                                             
+
                                                 </div>
                                             </div>
                                         </div>
@@ -583,7 +555,7 @@
                                 <div class="vc_column-inner"><div class="wpb_wrapper"></div></div>
                             </div>
                         </div>
-                        
+
                         <div class="container-fluid">
                         <div class="vc_row wpb_row vc_row-fluid vc_custom_1493986136760">
                             <div class="wpb_animate_when_almost_visible wpb_fadeInUp fadeInUp wpb_column vc_column_container vc_col-sm-12">
@@ -594,12 +566,12 @@
                                                 <div class="mgt-post normal-blocks post-has-image">
                                                     <a href="single_blog.html">
                                                         <div class="mgt-post-image" data-style="background-image: url(front/upload/Stage_decoration.jpg);">
-                                                         
+
                                                         </div>
                                                     </a>
                                                     <div class="mgt-post-details">
-                                              
-                                                    
+
+
                                                         <div class="mgt-post-title">
                                                             <a href="single_blog.html"><h5>Stage Decoration</h5></a>
                                                         </div>
@@ -608,11 +580,11 @@
                                                 <div class="mgt-post normal-blocks post-has-image">
                                                     <a href="single_blog.html">
                                                         <div class="mgt-post-image" data-style="background-image: url(front/upload/car.jpg);">
-                                                           
+
                                                         </div>
                                                     </a>
                                                     <div class="mgt-post-details">
-                                                 
+
                                                         <div class="mgt-post-title">
                                                             <a href="single_blog.html"><h5>Holud Decoration</h5></a>
                                                         </div>
@@ -621,11 +593,11 @@
                                                 <div class="mgt-post normal-blocks post-has-image">
                                                     <a href="single_blog.html">
                                                         <div class="mgt-post-image" data-style="background-image: url(front/upload/Holud.jpg);">
-                                                         
+
                                                         </div>
                                                     </a>
                                                     <div class="mgt-post-details">
-                                                  
+
                                                         <div class="mgt-post-title">
                                                             <a href="single_blog.html"><h5>Car Decoration</h5></a>
                                                         </div>
@@ -640,7 +612,7 @@
                             </div>
                         </div>
                         </div>
-                    
+
                         <div class="vc_row-full-width vc_clearfix"></div>
                         <div class="container-fluid">
                         <div data-vc-full-width="true" data-vc-full-width-init="false" class="vc_row wpb_row vc_row-fluid vc_custom_1493398721581 vc_row-has-fill vc_row-o-equal-height vc_row-flex">
@@ -653,7 +625,7 @@
                                         <div
                                             class="mgt-header-block clearfix text-center text-white wpb_animate_when_almost_visible wpb_fadeInDown fadeInDown wpb_content_element mgt-header-block-style-2 mgt-header-block-fontsize-medium mgt-header-texttransform-subheader mgt-header-block-74170585"
                                         >
-                                      
+
                                             <h2 class="mgt-header-block-title text-font-weight-default">TESTIMONIALS</h2>
                                             <div class="mgt-header-line mgt-header-line-margin-small"></div>
                                         </div>
@@ -770,10 +742,10 @@
                                     <li class="menu-item"><a href="#">Helpful Tips</a></li>
                                     <li class="menu-item"><a href="#">Submit story</a></li>
                                     <li class="menu-item"><a href="#">News</a></li>
-                                </ul>       
+                                </ul>
                             </div>
                             <h3 style="margin-top: 26px;font-weight: bold; color: red;">Total Viewed - 000000</h3>
-                        </li>             
+                        </li>
                         <li id="nav_menu-2" class="widget widget_nav_menu">
                             <h2 class="widgettitle">Privacy & You</h2>
                             <div class="menu-footermenu-simple-container">
@@ -793,10 +765,10 @@
                                 @endif
                             </div>
                         </li>
-                        </ul>                  
-                    <p style="text-align: center;">Patro-patri.com is a unique and best solution for Bride and Groom match-making.<br> 
+                        </ul>
+                    <p style="text-align: center;">Patro-patri.com is a unique and best solution for Bride and Groom match-making.<br>
                     This website is strictly for matrimonial purpose only and not a dating website</p>
-  					
+
                 </div>
             </div>
         </div>
@@ -804,7 +776,7 @@
 
 
     <script type="text/javascript" src="front/js/jquery.js"></script>
-    <script type="text/javascript" src="front/js/plugins/revslider/public/assets/js/jquery.themepunch.tools.min.js"></script>  
+    <script type="text/javascript" src="front/js/plugins/revslider/public/assets/js/jquery.themepunch.tools.min.js"></script>
 
     <script type="text/javascript">
         (function ($) {
@@ -876,7 +848,7 @@
                 $("#portfolio-list-79562184").mixItUp({ effects: ["rotateX", "scale"], easing: "snap" });
             });
         })(jQuery);
-    </script>    
+    </script>
 
     <script type="text/javascript">
         /* <![CDATA[ */
@@ -1110,7 +1082,7 @@
                 });
             });
         })(jQuery);
-    </script>    
+    </script>
     <div class="search-fullscreen-container"></div>
     <div class="search-fullscreen-wrapper">
         <div class="search-fullscreen-form">

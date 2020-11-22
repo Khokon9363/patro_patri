@@ -80,6 +80,18 @@
                 </div>
             </li>
             <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsexyz"
+                   aria-expanded="true" aria-controls="collapsexyz">
+                    <i class="fas fa-fw fa-cog"></i>
+                    <span>Services</span>
+                </a>
+                <div id="collapsexyz" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <a class="collapse-item" href="{{ url('/admin/manage-service') }}">Manage services</a>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseFive"
                     aria-expanded="true" aria-controls="collapseFive">
                     <i class="fas fa-fw fa-cog"></i>
