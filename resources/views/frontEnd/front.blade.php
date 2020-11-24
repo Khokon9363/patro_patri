@@ -563,46 +563,18 @@
                                     <div class="wpb_wrapper">
                                         <div class="mgt-post-list-wrapper">
                                             <div id="mgt-post-list-79556615" class="mgt-post-list wpb_content_element animated mgt-post-list-style-rounded" style="display: none;">
+                                                @foreach($services as $service)
                                                 <div class="mgt-post normal-blocks post-has-image">
-                                                    <a href="single_blog.html">
-                                                        <div class="mgt-post-image" data-style="background-image: url(front/upload/Stage_decoration.jpg);">
-
-                                                        </div>
+                                                    <a href="{{ url('/service-details/'.$service->id) }}">
+                                                        <div class="mgt-post-image" data-style="background-image: url({{ asset('/image/'.$service->image) }});"></div>
                                                     </a>
                                                     <div class="mgt-post-details">
-
-
                                                         <div class="mgt-post-title">
-                                                            <a href="single_blog.html"><h5>Stage Decoration</h5></a>
+                                                            <a href="{{ url('/service-details/'.$service->id) }}"><h5>{{ ucfirst($service->title) }}</h5></a>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="mgt-post normal-blocks post-has-image">
-                                                    <a href="single_blog.html">
-                                                        <div class="mgt-post-image" data-style="background-image: url(front/upload/car.jpg);">
-
-                                                        </div>
-                                                    </a>
-                                                    <div class="mgt-post-details">
-
-                                                        <div class="mgt-post-title">
-                                                            <a href="single_blog.html"><h5>Holud Decoration</h5></a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="mgt-post normal-blocks post-has-image">
-                                                    <a href="single_blog.html">
-                                                        <div class="mgt-post-image" data-style="background-image: url(front/upload/Holud.jpg);">
-
-                                                        </div>
-                                                    </a>
-                                                    <div class="mgt-post-details">
-
-                                                        <div class="mgt-post-title">
-                                                            <a href="single_blog.html"><h5>Car Decoration</h5></a>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                                @endforeach
                                             </div>
                                         </div>
                                         <div class="clearfix"></div>
