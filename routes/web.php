@@ -15,6 +15,8 @@ Route::get('/','FrontEndController@frontEnd')->name('/');
 Route::get('/customer_register','FrontEndController@register')->name('/customer_register');
 Route::get('/customer_login','FrontEndController@login')->name('/customer_login');
 Route::get('/about','FrontEndController@about')->name('/about');
+Route::get('/terms','FrontEndController@terms')->name('/terms');
+Route::get('/privacy','FrontEndController@privacy')->name('/privacy');
 Route::get('/service-details/{id}','FrontEndController@serviceDetails');
 Route::get('/services/{id}','FrontEndController@servicesDetails');
 Route::get('/offers/{id}','FrontEndController@offersDetails');
@@ -37,6 +39,12 @@ Route::prefix('admin')->group(function () {
     Route::get('/bride/delete/{id}','HomeController@brideDelete');
     Route::get('/manage-gallery-groom','HomeController@groomGallery');
     Route::post('/groom/store','HomeController@groomStore');
+    Route::get('/about','HomeController@about');
+    Route::post('/about/store','HomeController@aboutStore');
+    Route::get('/terms','HomeController@terms');
+    Route::get('/privacy','HomeController@privacy');
+    Route::post('/term/store','HomeController@termStore');
+    Route::post('/privacy/store','HomeController@privacyStore');
 
     Route::get('/profile','HomeController@profile');
     Route::post('update/profile','HomeController@update');

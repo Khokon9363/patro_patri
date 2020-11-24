@@ -2,12 +2,15 @@
 
 namespace App\Http\Controllers;
 
+use App\About;
 use App\GroomSolution;
 use App\Offer;
+use App\Privacy;
 use App\Service;
 use App\Solution;
 use App\SubMenu;
 use App\SubMenuTwo;
+use App\Term;
 use App\User;
 use Brian2694\Toastr\Toastr;
 use Illuminate\Http\Request;
@@ -193,5 +196,155 @@ class HomeController extends Controller
         Solution::destroy($id);
         \Toastr::success('Solution deleted successfully','Success');
         return redirect()->back();
+    }
+    public function about()
+    {
+        if(About::first()){
+            $about = About::first();
+            return view('admin.about_terms.about',compact('about'));
+        }
+        return view('admin.about_terms.about');
+    }
+    public function terms()
+    {
+        if(Term::first()){
+            $term = Term::first();
+            return view('admin.about_terms.terms',compact('term'));
+        }
+        return view('admin.about_terms.terms');
+    }
+    public function aboutStore(Request $request)
+    {
+        if(About::first()){
+            $about = About::first();
+            $about->bold_text = $request->bold_text;
+            $about->normal_text = $request->normal_text;
+            $about->intention = $request->intention;
+            $about->vision = $request->vision;
+            $about->mission = $request->mission;
+            $about->keep_going = $request->keep_going;
+            $about->save();
+            \Toastr::success('About Updated Successfully','Success');
+            return redirect()->back();
+        }else{
+            $about = new About();
+            $about->bold_text = $request->bold_text;
+            $about->normal_text = $request->normal_text;
+            $about->intention = $request->intention;
+            $about->vision = $request->vision;
+            $about->mission = $request->mission;
+            $about->keep_going = $request->keep_going;
+            $about->save();
+            \Toastr::success('About Saved Successfully','Success');
+            return redirect()->back();
+        }
+    }
+    public function termStore(Request $request)
+    {
+        if(Term::first()){
+            $term = Term::first();
+            $term->one = $request->one;
+            $term->two = $request->two;
+            $term->three = $request->three;
+            $term->four = $request->four;
+            $term->five = $request->five;
+            $term->six = $request->six;
+            $term->seven = $request->seven;
+            $term->eight = $request->eight;
+            $term->nine = $request->nine;
+            $term->ten = $request->ten;
+            $term->eleven = $request->eleven;
+            $term->twelve = $request->twelve;
+            $term->thirteen = $request->thirteen;
+            $term->fourteen = $request->fourteen;
+            $term->fifteen = $request->fifteen;
+            $term->sixteen = $request->sixteen;
+            $term->seventeen = $request->seventeen;
+            $term->eighteen = $request->eighteen;
+            $term->nineteen = $request->nineteen;
+            $term->save();
+            \Toastr::success('Terms & Conditions Updated Successfully','Success');
+            return redirect()->back();
+        }else{
+            $term = new Term();
+            $term->one = $request->one;
+            $term->two = $request->two;
+            $term->three = $request->three;
+            $term->four = $request->four;
+            $term->five = $request->five;
+            $term->six = $request->six;
+            $term->seven = $request->seven;
+            $term->eight = $request->eight;
+            $term->nine = $request->nine;
+            $term->ten = $request->ten;
+            $term->eleven = $request->eleven;
+            $term->twelve = $request->twelve;
+            $term->thirteen = $request->thirteen;
+            $term->fourteen = $request->fourteen;
+            $term->fifteen = $request->fifteen;
+            $term->sixteen = $request->sixteen;
+            $term->seventeen = $request->seventeen;
+            $term->eighteen = $request->eighteen;
+            $term->nineteen = $request->nineteen;
+            $term->save();
+            \Toastr::success('Terms & Conditions Saved Successfully','Success');
+            return redirect()->back();
+        }
+    }
+    public function privacy()
+    {
+        if(Privacy::first()){
+            $privacy = Privacy::first();
+            return view('admin.about_terms.privacy',compact('privacy'));
+        }
+        return view('admin.about_terms.privacy');
+    }
+    public function privacyStore(Request $request)
+    {
+        if(Privacy::first()){
+            $term = Privacy::first();
+            $term->one = $request->one;
+            $term->two = $request->two;
+            $term->three = $request->three;
+            $term->four = $request->four;
+            $term->five = $request->five;
+            $term->six = $request->six;
+            $term->seven = $request->seven;
+            $term->eight = $request->eight;
+            $term->nine = $request->nine;
+            $term->ten = $request->ten;
+            $term->eleven = $request->eleven;
+            $term->twelve = $request->twelve;
+            $term->thirteen = $request->thirteen;
+            $term->fourteen = $request->fourteen;
+            $term->fifteen = $request->fifteen;
+            $term->sixteen = $request->sixteen;
+            $term->seventeen = $request->seventeen;
+            $term->save();
+            \Toastr::success('Privacy Updated Successfully','Success');
+            return redirect()->back();
+        }else{
+            $term = new Privacy();
+            $term->one = $request->one;
+            $term->two = $request->two;
+            $term->three = $request->three;
+            $term->four = $request->four;
+            $term->five = $request->five;
+            $term->six = $request->six;
+            $term->seven = $request->seven;
+            $term->eight = $request->eight;
+            $term->nine = $request->nine;
+            $term->ten = $request->ten;
+            $term->eleven = $request->eleven;
+            $term->twelve = $request->twelve;
+            $term->thirteen = $request->thirteen;
+            $term->fourteen = $request->fourteen;
+            $term->fifteen = $request->fifteen;
+            $term->sixteen = $request->sixteen;
+            $term->seventeen = $request->seventeen;
+            $term->save();
+            \Toastr::success('Privacy Saved Successfully','Success');
+            return redirect()->back();
+        }
     }
 }

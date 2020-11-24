@@ -1,7 +1,7 @@
 @extends('frontEnd.master')
 @section('content')
 
-<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel" style="border-bottom: 10px solid white;">
   <div class="carousel-inner">
 
   @if(!empty($sliders))
@@ -25,13 +25,13 @@
   </a>
 </div>
 
-                        <div class="vc_row wpb_row vc_row-fluid vc_custom_1501090404957 vc_row-o-equal-height vc_row-flex" style="text-align:center">
+                        <div class="vc_row wpb_row vc_row-fluid vc_custom_1501090404957 vc_row-o-equal-height vc_row-flex" style="text-align:center;border-bottom: 10px solid white;padding-bottom: 50px">
                             <div class="col-md-12 col-sm-12">
                                 <a href="{{ route('/customer_register') }}"><img src="{{ asset('/front/upload/Register-icon.png') }}"  height="195px" width="200px"></a>
                             </div>
                         </div>
 
-<div class="section" >
+<div class="section" style="border-bottom: 10px solid white;padding-bottom: 123px;">
 <div class="container">
 <div class="row mb-5" style="padding-top: 50px;">
    <div id="mob_hide" class="col-md-8">
@@ -63,123 +63,82 @@
 
  <div class="row">
 
-    <div class="card col-md-4" style="border-radius: 10px;box-shadow: 5px 6px 3px darkgrey;background-color: #F8F8FB;">
-        <div class="card-body" style=" padding: 46px;">
-            <h3 class="text-center" style="padding-bottom:15px;">Mother Tongue</h3>
-            <div class="text-center" style="padding-left: 36px;padding-right: 49px;padding-bottom:15px;">
-            <a href="">Hindi</a> |
-            <a href="">English</a> |
-            <a href="">Urdu</a> |
-            <a href="">Punjabi</a> |
-            <a href="">Marathi</a> |
-            <a href="">Gujrati</a> |
-            <a href="">Bangla</a> |
-            <a href="">Tamil</a> |
-            <a href="">Malayam</a> |
-            <a href="">Telugu</a> |
-            <a href="">Bihari</a>
-            </div>
-            <div class="text-center">
-                <input type="submit" value="Read More.." class="btn btn-grey">
-            </div>
-        </div>
-    </div>
-    <div class="card col-md-4" style="border-radius: 10px;box-shadow: 5px 6px 3px darkgrey;background-color: #F8F8FB;">
-        <div class="card-body" style=" padding: 46px;">
-            <h3 class="text-center" style="padding-bottom:15px;">RELIGION</h3>
-            <div class="text-center" style="padding-left: 36px;padding-right: 49px;padding-bottom:15px;">
-            <a href="">Hindu</a> |
-            <a href="">Muslim</a> |
-            <a href="">Christian</a> |
-            <a href="">Sikh</a> |
-            <a href="">Budhist</a> |
-            <a href="">Jain</a>
-            </div>
-            <div class="text-center">
-                <input type="submit" value="Read More.." class="btn btn-grey">
-            </div>
-        </div>
-    </div>
-    <div class="card col-md-4" style="border-radius: 10px;box-shadow: 5px 6px 3px darkgrey;background-color: #F8F8FB;">
-        <div class="card-body" style=" padding: 46px;">
-            <h3 class="text-center" style="padding-bottom:15px;">CASTE</h3>
-            <div class="text-center" style="padding-left: 36px;padding-right: 49px;padding-bottom:15px;">
-            <a href="">Sunni</a> |
-            <a href="">Brahmin</a> |
-            <a href="">Maratha</a> |
-            <a href="">Rajput</a> |
-            <a href="">Kayastha</a> |
-            <a href="">Punjabi</a> |
-            <a href="">Aggarwal</a> |
-            <a href="">Jat</a> |
-            <a href="">Bengali</a> |
-            <a href="">Kshatriya</a>
-            </div>
-            <div class="text-center">
-                <input type="submit" value="Read More.." class="btn btn-grey">
-            </div>
-        </div>
-    </div>
-    <div class="card col-md-4" style="border-radius: 10px;box-shadow: 5px 6px 3px darkgrey;background-color: #F8F8FB;">
-        <div class="card-body" style=" padding: 46px;">
-            <h3 class="text-center" style="padding-bottom:15px;">STATES</h3>
-            <div class="text-center" style="padding-left: 36px;padding-right: 49px;padding-bottom:15px;">
-            <a href="">California</a> |
-            <a href="">New York</a> |
-            <a href="">Texas</a> |
-            <a href="">New Jersey</a> |
-            <a href="">Virginia</a> |
-            <a href="">Illinois</a> |
-            <a href="">Florida</a> |
-            <a href="">Pennsylvania</a> |
-            <a href="">Michigan</a> |
-            <a href="">Georgia</a>
-            </div>
-            <div class="text-center">
-                <input type="submit" value="Read More.." class="btn btn-grey">
-            </div>
-        </div>
-    </div>
-    <div class="card col-md-4" style="border-radius: 10px;box-shadow: 5px 6px 3px darkgrey;background-color: #F8F8FB;">
-        <div class="card-body" style=" padding: 46px;">
-            <h3 class="text-center" style="padding-bottom:15px;">OCCUPATION</h3>
-            <div class="text-center" style="padding-left: 36px;padding-right: 49px;padding-bottom:15px;">
-            <a href="">Engineer</a> |
-            <a href="">Business Owner</a> |
-            <a href="">IT Professional</a> |
-            <a href="">Teacher</a> |
-            <a href="">Accounting</a> |
-            <a href="">Banking</a> |
-            <a href="">Software Profession</a> |
-            <a href="">Government</a> |
-            <a href="">Sales/Marketing</a> |
-            <a href="">Academic</a>
-            </div>
-            <div class="text-center">
-                <input type="submit" value="Read More.." class="btn btn-grey">
-            </div>
-        </div>
-    </div>
-    <div class="card col-md-4" style="border-radius: 10px;box-shadow: 5px 6px 3px darkgrey;background-color: #F8F8FB;">
-        <div class="card-body" style=" padding: 46px;">
-            <h3 class="text-center" style="padding-bottom:15px;">INTERNATIONAL</h3>
-            <div class="text-center" style="padding-left: 36px;padding-right: 49px;padding-bottom:15px;">
-            <a href="">India</a> |
-            <a href="">United States</a> |
-            <a href="">Pakistan</a> |
-            <a href="">Canada</a> |
-            <a href="">United Kingdom</a> |
-            <a href="">Bangladesh</a> |
-            <a href="">United Arab Emirates</a> |
-            <a href="">Australia</a> |
-            <a href="">Saudi Arabia</a> |
-            <a href="">Nepal</a>
-            </div>
-            <div class="text-center">
-                <input type="submit" value="Read More.." class="btn btn-grey">
-            </div>
-        </div>
-    </div>
+     <div class="card col-md-4" style="border-radius: 10px;box-shadow: 5px 6px 3px darkgrey;background-color: #F8F8FB;">
+         <div class="card-body" style=" padding: 46px;">
+             <div class="text-center">
+                 <div class="form-group">
+                     <label for="exampleFormControlSelect1">MOTHER TONGUE</label>
+                     <select class="form-control" id="exampleFormControlSelect1">
+                         <option></option>
+                     </select>
+                 </div>
+                 <input type="submit" value="Search.." class="btn btn-grey" style="margin-top:15px;background-color:#0fcaf5;">
+             </div>
+         </div>
+     </div>
+     <div class="card col-md-4" style="border-radius: 10px;box-shadow: 5px 6px 3px darkgrey;background-color: #F8F8FB;">
+         <div class="card-body" style=" padding: 46px;">
+             <div class="text-center">
+                 <div class="form-group">
+                     <label for="exampleFormControlSelect1">RELIGION</label>
+                     <select class="form-control" id="exampleFormControlSelect1">
+                         <option></option>
+                     </select>
+                 </div>
+                 <input type="submit" value="Search.." class="btn btn-grey" style="margin-top:15px;background-color:#0fcaf5;">
+             </div>
+         </div>
+     </div>
+     <div class="card col-md-4" style="border-radius: 10px;box-shadow: 5px 6px 3px darkgrey;background-color: #F8F8FB;">
+         <div class="card-body" style=" padding: 46px;">
+             <div class="text-center">
+                 <div class="form-group">
+                     <label for="exampleFormControlSelect1">CASTE</label>
+                     <select class="form-control" id="exampleFormControlSelect1">
+                         <option></option>
+                     </select>
+                 </div>
+                 <input type="submit" value="Search.." class="btn btn-grey" style="margin-top:15px;background-color:#0fcaf5;">
+             </div>
+         </div>
+     </div>
+     <div class="card col-md-4" style="border-radius: 10px;box-shadow: 5px 6px 3px darkgrey;background-color: #F8F8FB;">
+         <div class="card-body" style=" padding: 46px;">
+             <div class="text-center">
+                 <div class="form-group">
+                     <label for="exampleFormControlSelect1">STATES</label>
+                     <select class="form-control" id="exampleFormControlSelect1">
+                         <option></option>
+                     </select>
+                 </div>
+                 <input type="submit" value="Search.." class="btn btn-grey" style="margin-top:15px;background-color:#0fcaf5;">
+             </div>
+         </div>
+     </div><div class="card col-md-4" style="border-radius: 10px;box-shadow: 5px 6px 3px darkgrey;background-color: #F8F8FB;">
+         <div class="card-body" style=" padding: 46px;">
+             <div class="text-center">
+                 <div class="form-group">
+                     <label for="exampleFormControlSelect1">OCCUPATION</label>
+                     <select class="form-control" id="exampleFormControlSelect1">
+                         <option></option>
+                     </select>
+                 </div>
+                 <input type="submit" value="Search.." class="btn btn-grey" style="margin-top:15px;background-color:#0fcaf5;">
+             </div>
+         </div>
+     </div><div class="card col-md-4" style="border-radius: 10px;box-shadow: 5px 6px 3px darkgrey;background-color: #F8F8FB;">
+         <div class="card-body" style=" padding: 46px;">
+             <div class="text-center">
+                 <div class="form-group">
+                     <label for="exampleFormControlSelect1">INTERNATIONAL</label>
+                     <select class="form-control" id="exampleFormControlSelect1">
+                         <option></option>
+                     </select>
+                 </div>
+                 <input type="submit" value="Search.." class="btn btn-grey" style="margin-top:15px;background-color:#0fcaf5;">
+             </div>
+         </div>
+     </div>
 
  </div>
 
@@ -188,7 +147,7 @@
 
                         <div class="vc_row-full-width vc_clearfix" style="margin-top: 80px;"></div>
 
-                        <div class="vc_row wpb_row vc_row-fluid vc_custom_1493643957724">
+                        <div class="vc_row wpb_row vc_row-fluid vc_custom_1493643957724" style="border-bottom: 10px solid white;padding-bottom: 60px;">
 
                             <div class="wpb_column vc_column_container vc_col-sm-3 vc_col-has-fill">
                                 <div class="vc_column-inner vc_custom_1497275312691">
@@ -310,7 +269,7 @@
                             </div>
                         </div>
                         <div class="vc_row-full-width vc_clearfix"></div>
-                        <div data-vc-full-width="true" data-vc-full-width-init="false" class="vc_row wpb_row vc_row-fluid vc_custom_1493722790880 vc_row-has-fill">
+                        <div data-vc-full-width="true" data-vc-full-width-init="false" style="border-bottom: 10px solid white;" class="vc_row wpb_row vc_row-fluid vc_custom_1493722790880 vc_row-has-fill">
                             @if(!empty($brideSolutions))
                             @foreach($brideSolutions as $brideSolution)
                             <a href="{{ url('/solution-detail/'.$brideSolution->id) }}">
@@ -357,7 +316,7 @@
                             </div>
                         </div>
                         <div class="vc_row-full-width vc_clearfix"></div>
-                        <div data-vc-full-width="true" data-vc-full-width-init="false" class="vc_row wpb_row vc_row-fluid vc_custom_1493722790880 vc_row-has-fill">
+                        <div data-vc-full-width="true" data-vc-full-width-init="false" style="border-bottom: 10px solid white;" class="vc_row wpb_row vc_row-fluid vc_custom_1493722790880 vc_row-has-fill">
                             @if(!empty($groomSolutions))
                                 @foreach($groomSolutions as $groomSolution)
                                     <a href="{{ url('/solution-detail/'.$groomSolution->id) }}">
@@ -417,7 +376,7 @@
                         </div>
 
 
-                        <div class="container-fluid">
+                        <div class="container-fluid" style="border-bottom: 10px solid white;">
                         <div class="vc_row wpb_row vc_row-fluid vc_custom_1493986136760">
                             <div class="wpb_animate_when_almost_visible wpb_fadeInUp fadeInUp wpb_column vc_column_container vc_col-sm-12">
                                 <div class="vc_column-inner">
@@ -461,6 +420,7 @@
 
                                             <h2 class="mgt-header-block-title text-font-weight-default">TESTIMONIALS</h2>
                                             <div class="mgt-header-line mgt-header-line-margin-small"></div>
+                                            <h3 style="margin-top:10px;color:red;font-weight:bolder;">Success Story : 533</h3>
                                         </div>
                                         <div class="mgt-button-wrapper mgt-button-wrapper-align-center mgt-button-wrapper-display-newline mgt-button-top-margin-true mgt-button-right-margin-false mgt-button-round-edges-small">
                                         </div>
@@ -478,6 +438,7 @@
                                     <div class="wpb_wrapper">
                                         <div class="mgt-client-reviews-wrapper">
                                             <div id="mgt-client-reviews-84055712" class="mgt-client-reviews wpb_content_element owl-normal-nav" style="display: none;">
+
                                                 <div class="mgt-client-review text-dark mgt-client-review-style-box mgt-client-review-shadow">
                                                     <div class="mgt-client-review-details">
                                                         <div class="mgt-client-review-content">
@@ -490,30 +451,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="mgt-client-review text-dark mgt-client-review-style-box mgt-client-review-shadow">
-                                                    <div class="mgt-client-review-details">
-                                                        <div class="mgt-client-review-content">
-															Patro-Patri.com is a reliable and right way to find bride and groom.
-                                                        </div>
-                                                        <div class="mgt-client-review-title">
-                                                            <div class="mgt-client-review-image"><img src="front/upload/LOGO-505-x-163.png" alt="Amalia Stivens" /></div>
-                                                            <h5>Amalia Stivens</h5>
-                                                            <div class="mgt-client-review-position">Senior Designer</div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="mgt-client-review text-dark mgt-client-review-style-box mgt-client-review-shadow">
-                                                    <div class="mgt-client-review-details">
-                                                        <div class="mgt-client-review-content">
-															Its a place where all kind of man/women can search their soulmate.
-                                                        </div>
-                                                        <div class="mgt-client-review-title">
-                                                            <div class="mgt-client-review-image"><img src="front/upload/LOGO-505-x-163.png" alt="Bradly Cooper" /></div>
-                                                            <h5>Bradly Cooper</h5>
-                                                            <div class="mgt-client-review-position">Copywriter</div>
-                                                        </div>
-                                                    </div>
-                                                </div>
+
                                             </div>
                                             <div class="clear"></div>
                                         </div>

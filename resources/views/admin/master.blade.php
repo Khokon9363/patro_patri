@@ -15,7 +15,7 @@
 <body id="page-top">
    <div id="wrapper">
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="dashboard">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{{ url('/admin/dashboard') }}">
                 <div class="sidebar-brand-icon rotate-n-15">
                     <i class="fas fa-laugh-wink"></i>
                 </div>
@@ -24,7 +24,7 @@
             <hr class="sidebar-divider my-0">
 
             <li class="nav-item active">
-                <a class="nav-link" href="dashboard">
+                <a class="nav-link" href="{{ url('/admin/dashboard') }}">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span></a>
             </li>
@@ -37,7 +37,7 @@
                 </a>
                 <div id="collapseOne" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="manage_mainmenu">Manage Main Menu</a>
+                        <a class="collapse-item" href="{{ url('/admin/manage_mainmenu') }}">Manage Main Menu</a>
                     </div>
                 </div>
             </li>
@@ -49,7 +49,7 @@
                 </a>
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="manage_submenu">Manage Submenu</a>
+                        <a class="collapse-item" href="{{ url('/admin/manage_submenu') }}">Manage Submenu</a>
                     </div>
                 </div>
             </li>
@@ -61,7 +61,7 @@
                 </a>
                 <div id="collapseThree" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="manage_submenu_two">Manage Submenu - 2</a>
+                        <a class="collapse-item" href="{{ url('/admin/manage_submenu_two') }}">Manage Submenu - 2</a>
                     </div>
                 </div>
             </li>
@@ -73,7 +73,7 @@
                 </a>
                 <div id="collapseFour" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="manage_slider">Manage Slider Images</a>
+                        <a class="collapse-item" href="{{ url('/admin/manage_slider') }}">Manage Slider Images</a>
                     </div>
                 </div>
             </li>
@@ -122,7 +122,21 @@
                 </a>
                 <div id="collapseFive" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="manage_testimonials">Manage Testimonials</a>
+                        <a class="collapse-item" href="{{ url('/admin/manage_testimonials') }}">Manage Testimonials</a>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseSix"
+                    aria-expanded="true" aria-controls="collapseSix">
+                    <i class="fas fa-fw fa-cog"></i>
+                    <span>Manage Extra page</span>
+                </a>
+                <div id="collapseSix" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <a class="collapse-item" href="{{ url('/admin/about') }}">Manage About page</a>
+                        <a class="collapse-item" href="{{ url('/admin/terms') }}">Manage Terms page</a>
+                        <a class="collapse-item" href="{{ url('/admin/privacy') }}">Manage Privacy page</a>
                     </div>
                 </div>
             </li>
@@ -137,7 +151,7 @@
                 </a>
                 <div id="x" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="manage_social">Manage Social Media</a>
+                        <a class="collapse-item" href="{{ url('/admin/manage_social') }}">Manage Social Media</a>
                     </div>
                 </div>
             </li>
@@ -255,7 +269,7 @@
                                 </h6>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="img/undraw_profile_1.svg"
+                                        <img class="rounded-circle" src="{{ asset('/admin/img/undraw_profile_1.svg') }}"
                                             alt="">
                                         <div class="status-indicator bg-success"></div>
                                     </div>
@@ -267,7 +281,7 @@
                                 </a>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="img/undraw_profile_2.svg"
+                                        <img class="rounded-circle" src="{{ asset('/admin/img/undraw_profile_2.svg') }}"
                                             alt="">
                                         <div class="status-indicator"></div>
                                     </div>
@@ -279,7 +293,7 @@
                                 </a>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="img/undraw_profile_3.svg"
+                                        <img class="rounded-circle" src="{{ asset('/admin/img/undraw_profile_3.svg') }}"
                                             alt="">
                                         <div class="status-indicator bg-warning"></div>
                                     </div>
@@ -313,12 +327,12 @@
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <span class="mr-2 d-none d-lg-inline text-gray-600 small">{{Auth::user()->name}}</span>
                                 <img class="img-profile rounded-circle"
-                                    src="img/undraw_profile.svg">
+                                    src="{{ asset('/admin/img/undraw_profile.svg') }}">
                             </a>
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
                                 aria-labelledby="userDropdown">
-                                <a class="dropdown-item" href="profile">
+                                <a class="dropdown-item" href="{{ url('/admin/profile') }}">
                                     <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Profile
                                 </a>
@@ -367,21 +381,21 @@
     </a>
 
     <!-- Bootstrap core JavaScript-->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ asset('/admin/vendor/jquery/jquery.min.js') }}"></script>
+    <script src="{{ asset('/admin/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
 
     <!-- Core plugin JavaScript-->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="{{ asset('/admin/vendor/jquery-easing/jquery.easing.min.js') }}"></script>
 
     <!-- Custom scripts for all pages-->
-    <script src="js/sb-admin-2.min.js"></script>
+    <script src="{{ asset('/admin/js/sb-admin-2.min.js') }}"></script>
 
     <!-- Page level plugins -->
-    <script src="vendor/chart.js/Chart.min.js"></script>
+    <script src="{{ asset('/admin/vendor/chart.js/Chart.min.js') }}"></script>
 
     <!-- Page level custom scripts -->
-    <script src="js/demo/chart-area-demo.js"></script>
-    <script src="js/demo/chart-pie-demo.js"></script>
+    <script src="{{ asset('/admin/js/demo/chart-area-demo.js') }}"></script>
+    <script src="{{ asset('/admin/js/demo/chart-pie-demo.js') }}"></script>
     <script src="http://cdn.bootcss.com/toastr.js/latest/js/toastr.min.js"></script>
         {!! Toastr::message() !!}
 </body>

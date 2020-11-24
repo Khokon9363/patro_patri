@@ -2,13 +2,16 @@
 
 namespace App\Http\Controllers;
 
+use App\About;
 use App\MainMenu;
 use App\Offer;
+use App\Privacy;
 use App\Service;
 use App\Slider;
 use App\SocialMedia;
 use App\Solution;
 use App\SubMenu;
+use App\Term;
 use Illuminate\Http\Request;
 
 class FrontEndController extends Controller
@@ -73,7 +76,8 @@ class FrontEndController extends Controller
         $firstMenus = MainMenu::skip(0)->take(2)->get();
         $menus = MainMenu::with('subMenu')->skip(3)->take(3)->get();
         $galleryMenus = MainMenu::with('subMenu')->skip(2)->take(1)->get();
-        return view('frontEnd.about',compact('social','firstMenus','menus','galleryMenus'));
+        $about = About::all();
+        return view('frontEnd.about',compact('about','social','firstMenus','menus','galleryMenus'));
     }
     public function offersDetails($id)
     {
@@ -103,5 +107,23 @@ class FrontEndController extends Controller
         $galleryMenus = MainMenu::with('subMenu')->skip(2)->take(1)->get();
         return view('frontEnd.solution_details',compact('solution','social','firstMenus','menus','galleryMenus'));
 
+    }
+    public function terms()
+    {
+        $social = SocialMedia::first();
+        $firstMenus = MainMenu::skip(0)->take(2)->get();
+        $menus = MainMenu::with('subMenu')->skip(3)->take(3)->get();
+        $galleryMenus = MainMenu::with('subMenu')->skip(2)->take(1)->get();
+        $term = Term::all();
+        return view('frontEnd.terms',compact('term','social','firstMenus','menus','galleryMenus'));
+    }
+    public function privacy()
+    {
+        $social = SocialMedia::first();
+        $firstMenus = MainMenu::skip(0)->take(2)->get();
+        $menus = MainMenu::with('subMenu')->skip(3)->take(3)->get();
+        $galleryMenus = MainMenu::with('subMenu')->skip(2)->take(1)->get();
+        $privacy = Privacy::all();
+        return view('frontEnd.privacy',compact('privacy','social','firstMenus','menus','galleryMenus'));
     }
 }

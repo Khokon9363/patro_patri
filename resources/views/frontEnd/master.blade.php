@@ -166,8 +166,8 @@
                             <h2 class="widgettitle">Privacy & You</h2>
                             <div class="menu-footermenu-simple-container">
                                 <ul id="menu-footermenu-simple" class="menu">
-                                    <li class="menu-item"><a href="#">Terms of Use</a></li>
-                                    <li class="menu-item"><a href="#">Privacy Policy</a></li>
+                                    <li class="menu-item"><a href="{{ route('/terms') }}">Terms of Use</a></li>
+                                    <li class="menu-item"><a href="{{ route('/privacy') }}">Privacy Policy</a></li>
                                     <li class="menu-item"><a href="#">Contact: +880 1841 676 661</a></li>
                                 </ul>
                                 @if(!empty($social))
