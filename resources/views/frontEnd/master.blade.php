@@ -4,17 +4,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="UTF-8" />
     <title>Patro-Patri.com</title>
-    <link rel="stylesheet" href="front/css/bootstrap.css" type="text/css" media="all" />
-    <link rel="stylesheet" href="front/js/plugins/owl-carousel/owl.carousel.css" type="text/css" media="all" />
-    <link rel="stylesheet" href="front/js/plugins/owl-carousel/owl.theme.css" type="text/css" media="all" />
-    <link rel="stylesheet" href="front/css/style.css" type="text/css" media="all" />
-    <link rel="stylesheet" href="front/css/responsivedc98.css?ver=all" type="text/css" media="all" />
-    <link rel="stylesheet" href="front/css/animations.css" type="text/css" media="all" />
-    <link rel="stylesheet" href="front/js/plugins/js_composer/assets/lib/bower/font-awesome/css/font-awesome.min.css" type="text/css" media="all" />
-    <link rel="stylesheet" href="front/js/plugins/js_composer/assets/css/js_composer.min.css" type="text/css" media="all" />
-    <link rel="stylesheet" href="front/css/css-skin.css" type="text/css" media="all" />
-    <link rel="stylesheet" href="front/js/plugins/js_composer/assets/lib/bower/animate-css/animate.min.css" type="text/css" media="screen" />
-    <link rel="icon" href="front/upload/LOGO-505-x-163.png" sizes="32x32" />
+    <link rel="stylesheet" href="{{ asset('/front/css/bootstrap.css') }}" type="text/css" media="all" />
+    <link rel="stylesheet" href="{{ asset('/front/js/plugins/owl-carousel/owl.carousel.css') }}" type="text/css" media="all" />
+    <link rel="stylesheet" href="{{ asset('/front/js/plugins/owl-carousel/owl.theme.css') }}" type="text/css" media="all" />
+    <link rel="stylesheet" href="{{ asset('/front/css/style.css') }}" type="text/css" media="all" />
+    <link rel="stylesheet" href="{{ asset('/front/css/responsivedc98.css?ver=all') }}" type="text/css" media="all" />
+    <link rel="stylesheet" href="{{ asset('/front/css/animations.css') }}" type="text/css" media="all" />
+    <link rel="stylesheet" href="{{ asset('/front/js/plugins/js_composer/assets/lib/bower/font-awesome/css/font-awesome.min.css') }}" type="text/css" media="all" />
+    <link rel="stylesheet" href="{{ asset('/front/js/plugins/js_composer/assets/css/js_composer.min.css') }}" type="text/css" media="all" />
+    <link rel="stylesheet" href="{{ asset('/front/css/css-skin.css') }}" type="text/css" media="all" />
+    <link rel="stylesheet" href="{{ asset('/front/js/plugins/js_composer/assets/lib/bower/animate-css/animate.min.css') }}" type="text/css" media="screen" />
+    <link rel="icon" href="{{ asset('/front/upload/LOGO-505-x-163.png') }}" sizes="32x32" />
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Nunito%3A400%2C700%26subset%3Dlatin%7CPoppins%3A300%2C300italic%2C400%2C400italic%2C600%2C600italic%26subset%3Dlatin%7CPoppins%3A300%2C400%2C600%26subset%3Dlatin&amp;ver=1.0" type="text/css" media="all"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <style>
@@ -22,28 +22,28 @@
             font-size: 15px;
         }
     </style>
-    <link rel="stylesheet" href="front/css/pe-icon-7-stroke.css" type="text/css" media="all" />
-    <link rel="stylesheet" href="front/js/plugins/responsive-lightbox/assets/nivo/nivo-lightbox.min.css" type="text/css" media="all" />
-    <link rel="stylesheet" href="front/js/plugins/responsive-lightbox/assets/nivo/themes/default/default.css" type="text/css" media="all" />
-    <link rel="stylesheet" href="front/js/plugins/revslider/public/assets/css/settings.css" type="text/css" media="all" />
-    <link rel="stylesheet" href="front/css/mega-menu.css" type="text/css" media="all" />
-    <link rel="stylesheet" href="front/css/mega-menu-responsive.css" type="text/css" media="all" />
-    <link rel="stylesheet" href="front/js/plugins/select2/select2.css" type="text/css" media="all" />
-    <link rel="stylesheet" href="front/css/offcanvasmenu.css" type="text/css" media="all" />
-    <link rel="stylesheet" href="front/css/nanoscroller.css" type="text/css" media="all" />
-    <link rel="stylesheet" href="front/css/hover.css" type="text/css" media="all" />
-    <link rel="stylesheet" href="front/js/plugins/thickbox/thickbox.css" type="text/css" media="all" />
-    <link rel="stylesheet" href="front/js/plugins/js_composer/assets/lib/bower/vcIconPicker/css/jquery.fonticonpicker.min.css" type="text/css" media="all" />
-    <link rel="stylesheet" href="front/js/plugins/js_composer/assets/lib/bower/vcIconPicker/themes/grey-theme/jquery.fonticonpicker.vcgrey.min.css" type="text/css" media="all" />
-    <link rel="stylesheet" href="front/js/plugins/js_composer/assets/css/lib/vc-open-iconic/vc_openiconic.min.css" type="text/css" media="all" />
-    <link rel="stylesheet" href="front/js/plugins/js_composer/assets/css/lib/typicons/src/font/typicons.min.css" type="text/css" media="all" />
-    <link rel="stylesheet" href="front/js/plugins/js_composer/assets/css/lib/vc-entypo/vc_entypo.min.css" type="text/css" media="all" />
-    <link rel="stylesheet" href="front/js/plugins/js_composer/assets/css/lib/vc-linecons/vc_linecons_icons.min.css" type="text/css" media="all" />
-    <link rel="stylesheet" href="front/js/plugins/js_composer/assets/css/lib/monosocialiconsfont/monosocialiconsfont.min.css" type="text/css" media="all" />
-    <link rel="stylesheet" href="front/js/plugins/js_composer/assets/css/lib/vc-material/vc_material.min.css" type="text/css" media="all" />
-    <link rel="stylesheet" href="front/js/plugins/js_composer/assets/css/js_composer_tta.min.css" type="text/css" media="all" />
-    <link rel="stylesheet" href="front/css/slick.css" type="text/css" media="all" />
-    <link rel="stylesheet" href="front/css/slick-theme.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="{{ asset('/front/css/pe-icon-7-stroke.css') }}" type="text/css" media="all" />
+    <link rel="stylesheet" href="{{ asset('/front/js/plugins/responsive-lightbox/assets/nivo/nivo-lightbox.min.css') }}" type="text/css" media="all" />
+    <link rel="stylesheet" href="{{ asset('/front/js/plugins/responsive-lightbox/assets/nivo/themes/default/default.css') }}" type="text/css" media="all" />
+    <link rel="stylesheet" href="{{ asset('/front/js/plugins/revslider/public/assets/css/settings.css') }}" type="text/css" media="all" />
+    <link rel="stylesheet" href="{{ asset('/front/css/mega-menu.css') }}" type="text/css" media="all" />
+    <link rel="stylesheet" href="{{ asset('/front/css/mega-menu-responsive.css') }}" type="text/css" media="all" />
+    <link rel="stylesheet" href="{{ asset('/front/js/plugins/select2/select2.css') }}" type="text/css" media="all" />
+    <link rel="stylesheet" href="{{ asset('/front/css/offcanvasmenu.css') }}" type="text/css" media="all" />
+    <link rel="stylesheet" href="{{ asset('/front/css/nanoscroller.css') }}" type="text/css" media="all" />
+    <link rel="stylesheet" href="{{ asset('/front/css/hover.css') }}" type="text/css" media="all" />
+    <link rel="stylesheet" href="{{ asset('/front/js/plugins/thickbox/thickbox.css') }}" type="text/css" media="all" />
+    <link rel="stylesheet" href="{{ asset('/front/js/plugins/js_composer/assets/lib/bower/vcIconPicker/css/jquery.fonticonpicker.min.css') }}" type="text/css" media="all" />
+    <link rel="stylesheet" href="{{ asset('/front/js/plugins/js_composer/assets/lib/bower/vcIconPicker/themes/grey-theme/jquery.fonticonpicker.vcgrey.min.css') }}" type="text/css" media="all" />
+    <link rel="stylesheet" href="{{ asset('/front/js/plugins/js_composer/assets/css/lib/vc-open-iconic/vc_openiconic.min.css') }}" type="text/css" media="all" />
+    <link rel="stylesheet" href="{{ asset('/front/js/plugins/js_composer/assets/css/lib/typicons/src/font/typicons.min.css') }}" type="text/css" media="all" />
+    <link rel="stylesheet" href="{{ asset('/front/js/plugins/js_composer/assets/css/lib/vc-entypo/vc_entypo.min.css') }}" type="text/css" media="all" />
+    <link rel="stylesheet" href="{{ asset('/front/js/plugins/js_composer/assets/css/lib/vc-linecons/vc_linecons_icons.min.css') }}" type="text/css" media="all" />
+    <link rel="stylesheet" href="{{ asset('/front/js/plugins/js_composer/assets/css/lib/monosocialiconsfont/monosocialiconsfont.min.css') }}" type="text/css" media="all" />
+    <link rel="stylesheet" href="{{ asset('/front/js/plugins/js_composer/assets/css/lib/vc-material/vc_material.min.css') }}" type="text/css" media="all" />
+    <link rel="stylesheet" href="{{ asset('/front/js/plugins/js_composer/assets/css/js_composer_tta.min.css') }}" type="text/css" media="all" />
+    <link rel="stylesheet" href="{{ asset('/front/css/slick.css') }}" type="text/css" media="all" />
+    <link rel="stylesheet" href="{{ asset('/front/css/slick-theme.css') }}" type="text/css" media="all" />
       <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
       <link rel="stylesheet" href="/resources/demos/style.css">
       <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
@@ -55,13 +55,13 @@
       </script>
 </head>
 <body style="background-color: #dcdcdc63;" class="home page-template-default page page-id-19 wpb-js-composer js-comp-ver-5.2 vc_responsive">
-    <header class="sticky-header main-header sticky-header-elements-headeronly mainmenu-position-menu_in_header">
+<header class="sticky-header main-header sticky-header-elements-headeronly mainmenu-position-menu_in_header">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <div class="header-left">
-                        <a class="logo-link" href="{{route('/')}}">
-                            <img src="front/upload/LOGO-505-x-163.png" alt="Barrel" class="regular-logo" /><img src="front/upload/LOGO-505-x-163.png" alt="Barrel" class="light-logo" />
+                        <a class="logo-link" href="{{ route('/') }}">
+                            <img src="{{ asset('/front/upload/LOGO-505-x-163.png') }}" alt="Barrel" class="regular-logo" /><img src="{{ asset('/front/upload/LOGO-505-x-163.png') }}" alt="Barrel" class="light-logo" />
                         </a>
                         <div class="mobile-main-menu-toggle" data-toggle="collapse" data-target=".collapse"><i class="fa fa-bars"></i></div>
                     </div>
@@ -70,74 +70,46 @@
                             <div class="navbar-inner">
                                 <div class="navbar-collapse collapse">
                                     <ul id="menu-main-menu-2" class="nav">
+                                        @foreach($firstMenus as $key => $menu)
                                         <li class="menu-item menu-item-home current-menu-item page_item page-item-19 current_page_item">
-                                            <a href="{{route('/')}}"><span>Home</span></a>
+                                            <a href="@if($key == 1) {{ route('/about') }} @else {{ route('/') }} @endif"><span style="color: red">{{ $menu['main_menu'] }}</span></a>
                                         </li>
-                                        <li class="menu-item">
-                                            <a href="about"><span>About us</span></a>
-                                        </li>
+                                        @endforeach
+                                        @foreach($galleryMenus as $galleryMenu)
                                         <li class="menu-item menu-item-has-children">
-                                            <a href="index.html"><span>Gallery</span></a>
+                                            <a href="#"><span>{{ $galleryMenu->main_menu }}</span></a>
                                             <ul class="sub-menu megamenu-column-1 level-0">
-                                                <li class="menu-item menu-item-has-children">
-                                                    <a href="#">Bride Collection</a>
-                                                    <ul class="sub-menu level-1">
-                                                        <li class="menu-item">
-                                                            <a href="">Bridal Dress</a>
-                                                            <a href="">Bridal Ornaments</a>
-                                                            <a href="">Bridal Shoes</a>
-                                                            <a href="">Groom Cosmetics</a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li class="menu-item menu-item-has-children">
-                                                    <a href="#">Groom Collection</a>
-                                                    <ul class="sub-menu level-1">
-                                                        <li class="menu-item">
-                                                            <a href="">Groom Dress</a>
-                                                            <a href="">Groom Ornaments</a>
-                                                            <a href="">Groom Shoes</a>
-                                                            <a href="">Groom Cosmetics</a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
+                                                @foreach($galleryMenu->subMenu as $sub_manu)
+                                                    <li class="menu-item menu-item-has-children">
+                                                        <a href="">{{ $sub_manu->sub_menu }}</a>
+                                                        <ul class="sub-menu level-1">
+                                                            <li class="menu-item">
+                                                                @foreach($sub_manu->subMenuTwo as $subMenuTwo)
+                                                                <a href="{{ url('/gallery-details/'.$subMenuTwo->id) }}">{{ $subMenuTwo->sub_menu_two }}</a>
+                                                                @endforeach
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                @endforeach
                                             </ul>
                                         </li>
+                                        @endforeach
+                                        @foreach($menus as $key => $menu)
                                         <li class="menu-item menu-item-has-children">
-                                            <a href="index.html"><span>Services</span></a>
+                                            <a href="#"><span>{{ $menu->main_menu }}</span></a>
                                             <ul class="sub-menu">
                                                 <li class="menu-item">
-                                                    <a href="">Car rent & Decoration</a>
-                                                    <a href="">Stage Decoratiom</a>
-                                                    <a href="">Holud Dala prepararion</a>
-                                                    <a href="">Event Management</a>
+                                                    @foreach($menu->subMenu as $subMenu)
+                                                    <a href="@if($key == 0) {{ url('/services/'.$subMenu->id) }} @elseif($key == 1){{ url('/testimonials/'.$subMenu->id) }} @else {{ url('/offers/'.$subMenu->id) }} @endif">{{ $subMenu->sub_menu }}</a>
+                                                    @endforeach
                                                 </li>
                                             </ul>
                                         </li>
-                                        <li class="menu-item menu-item-has-children">
-                                            <a href="index.html"><span>Testmonials</span></a>
-                                            <ul class="sub-menu megamenu-column-1 level-0">
-                                                <li class="menu-item">
-                                                    <a href="">Bride Testimonial</a>
-                                                </li>
-                                                <li class="menu-item">
-                                                    <a href="">Groom Testimonial</a>
-                                                </li>
-                                            </ul>
-                                        </li> 
-                                        <li class="menu-item menu-item-has-children">
-                                            <a href="index.html"><span>offers</span></a>
-                                            <ul class="sub-menu">
-                                                <li class="menu-item">
-                                                    <a href="index.html">Summer Offer</a>
-                                                    <a href="index.html">Winter Offer</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="menu-item menu-item-home current-menu-item page_item page-item-19 current_page_item">
-                                            <a href="{{route('customer_login')}}"><span>Login</span></a>
-                                        </li>
+                                        @endforeach
 
+                                        <li class="menu-item menu-item-home current-menu-item page_item page-item-19 current_page_item">
+                                            <a href="{{ route('/customer_login') }}"><span>Login</span></a>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -153,12 +125,14 @@
 
 <div class="container-fluid footer-wrapper">
         <div class="row">
-            <div class="footer-sidebar-wrapper footer-sidebar-style-dark with-bg w-100" data-style="background-image: url(front/upload/footer-image-back.jpg);">
+            <div class="footer-sidebar-wrapper footer-sidebar-style-dark with-bg w-100" data-style="background-image: url({{
+    asset('/front/upload/footer-image-back.jpg')
+}});">
                 <div class="footer-sidebar sidebar container footer-sidebar-col-4">
                     <ul id="footer-sidebar" class="clearfix">
                         <li id="text-2" class="widget widget_text">
                             <div class="textwidget">
-                                <img src="front/upload/LOGO-505-x-163.png" width="200" height="300" alt="Logo" />
+                                <img src="{{ asset('/front/upload/LOGO-505-x-163.png') }}" width="200" height="300" alt="Logo" />
                                 <br />
                                 <p style="text-align: center; font-size: 13px;font-weight: bold; text-transform: uppercase;margin-top:5px;">Marriage isn't<br>"I promise to love you until I stop loving you".</p>
                                 <p>It's "I promise to make a conscious decidion to continue to love you even when it's hard because I'm aware no one is perfect, but you are worth it".</p>
@@ -169,8 +143,8 @@
                             <div class="menu-footermenu-1-container">
                                 <ul id="menu-footermenu-1" class="menu">
                                     <li class="menu-item"><a href="{{route('/')}}">Patro-Patri</a></li>
-                                    <li class="menu-item"><a href="{{route('customer_login')}}">Member Login</a></li>
-                                    <li class="menu-item"><a href="customer_register">Sign Up</a></li>
+                                    <li class="menu-item"><a href="{{route('/customer_login')}}">Member Login</a></li>
+                                    <li class="menu-item"><a href="{{ route('/customer_register') }}">Sign Up</a></li>
                                     <li class="menu-item"><a href="#">Partner Search</a></li>
                                     <li class="menu-item"><a href="#">Customer Support</a></li>
                                 </ul>
@@ -180,14 +154,14 @@
                             <h2 class="widgettitle">Company</h2>
                             <div class="menu-footermenu-simple-container">
                                 <ul id="menu-footermenu-simple" class="menu">
-                                    <li class="menu-item"><a href="#">About Us</a></li>
+                                    <li class="menu-item"><a href="@if(!empty($firstMenus)) {{ route('/about') }} @endif">About Us</a></li>
                                     <li class="menu-item"><a href="#">Helpful Tips</a></li>
                                     <li class="menu-item"><a href="#">Submit story</a></li>
                                     <li class="menu-item"><a href="#">News</a></li>
-                                </ul>       
+                                </ul>
                             </div>
                             <h3 style="margin-top: 26px;font-weight: bold; color: red;">Total Viewed - 000000</h3>
-                        </li>             
+                        </li>
                         <li id="nav_menu-2" class="widget widget_nav_menu">
                             <h2 class="widgettitle">Privacy & You</h2>
                             <div class="menu-footermenu-simple-container">
@@ -207,18 +181,18 @@
                                 @endif
                             </div>
                         </li>
-                        </ul>                  
-                    <p style="text-align: center;">Patro-patri.com is a unique and best solution for Bride and Groom match-making.<br> 
+                        </ul>
+                    <p style="text-align: center;">Patro-patri.com is a unique and best solution for Bride and Groom match-making.<br>
                     This website is strictly for matrimonial purpose only and not a dating website</p>
-  					
+
                 </div>
             </div>
         </div>
     </div>
 
 
-    <script type="text/javascript" src="front/js/jquery.js"></script>
-    <script type="text/javascript" src="front/js/plugins/revslider/public/assets/js/jquery.themepunch.tools.min.js"></script>  
+    <script type="text/javascript" src="{{ asset('/front/js/jquery.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('/front/js/plugins/revslider/public/assets/js/jquery.themepunch.tools.min.js') }}"></script>
 
     <script type="text/javascript">
         (function ($) {
@@ -228,7 +202,7 @@
         })(jQuery);
     </script>
 
-    <script type="text/javascript" src="front/js/plugins/js-skin.js"></script>
+    <script type="text/javascript" src="{{ asset('/front/js/plugins/js-skin.js') }}"></script>
     <script type="text/javascript">
         function setREVStartSize(e) {
             try {
@@ -290,7 +264,7 @@
                 $("#portfolio-list-79562184").mixItUp({ effects: ["rotateX", "scale"], easing: "snap" });
             });
         })(jQuery);
-    </script>    
+    </script>
 
     <script type="text/javascript">
         /* <![CDATA[ */
@@ -305,20 +279,20 @@
         };
         /* ]]> */
     </script>
-    <script type="text/javascript" src="front/js/plugins/thickbox/thickbox.js"></script>
-    <script type="text/javascript" src="front/js/plugins/bootstrap.min.js"></script>
-    <script type="text/javascript" src="front/js/plugins/easing.js"></script>
-    <script type="text/javascript" src="front/js/plugins/select2/select2.min.js"></script>
-    <script type="text/javascript" src="front/js/plugins/owl-carousel/owl.carousel.min.js"></script>
-    <script type="text/javascript" src="front/js/plugins/jquery.nanoscroller.min.js"></script>
-    <script type="text/javascript" src="front/js/plugins/jquery.mixitup.min.js"></script>
-    <script type="text/javascript" src="front/js/plugins/TweenMax.min.js"></script>
-    <script type="text/javascript" src="front/js/plugins/template.js"></script>
-    <script type="text/javascript" src="front/js/plugins/js_composer/assets/js/dist/js_composer_front.min.js"></script>
-    <script type="text/javascript" src="front/js/plugins/js_composer/assets/lib/waypoints/waypoints.min.js"></script>
-    <script type="text/javascript" src="front/js/plugins/jquery.appear.js"></script>
-    <script type="text/javascript" src="front/js/plugins/jquery.countTo.js"></script>
-    <script type="text/javascript" src="front/js/plugins/slick.min.js"></script>
+    <script type="text/javascript" src="{{ asset('/front/js/plugins/thickbox/thickbox.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('/front/js/plugins/bootstrap.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('/front/js/plugins/easing.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('/front/js/plugins/select2/select2.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('/front/js/plugins/owl-carousel/owl.carousel.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('/front/js/plugins/jquery.nanoscroller.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('/front/js/plugins/jquery.mixitup.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('/front/js/plugins/TweenMax.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('/front/js/plugins/template.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('/front/js/plugins/js_composer/assets/js/dist/js_composer_front.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('/front/js/plugins/js_composer/assets/lib/waypoints/waypoints.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('/front/js/plugins/jquery.appear.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('/front/js/plugins/jquery.countTo.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('/front/js/plugins/slick.min.js') }}"></script>
     <script>
         var htmlDiv = document.getElementById("rs-plugin-settings-inline-css");
         var htmlDivCss = "";
@@ -354,7 +328,7 @@
                     .show()
                     .revolution({
                         sliderType: "standard",
-                        jsFileLocation: "js/plugins/revslider/public/assets/js/",
+                        jsFileLocation: "{{ asset('/js/plugins/revslider/public/assets/js/') }}",
                         sliderLayout: "fullscreen",
                         dottedOverlay: "none",
                         delay: 1500,
@@ -524,7 +498,7 @@
                 });
             });
         })(jQuery);
-    </script>    
+    </script>
     <div class="search-fullscreen-container"></div>
     <div class="search-fullscreen-wrapper">
         <div class="search-fullscreen-form">

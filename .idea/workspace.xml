@@ -20,9 +20,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b58e6663-5514-46e2-82ef-9a04e53325c0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/offers/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/solutions/bride.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/solutions/groom.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/frontEnd/offers_details.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/frontEnd/service_details.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/frontEnd/services_details.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/frontEnd/solution_details.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/frontEnd/solutions_details.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/FrontEndController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/FrontEndController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/SubMenu.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/SubMenu.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/SubMenuTwo.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/SubMenuTwo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/front/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/front/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/master.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/services/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/services/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/frontEnd/front.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontEnd/front.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontEnd/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontEnd/master.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,8 +170,14 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/frontEnd" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\xampp\htdocs\patro_patri\resources\views\frontEnd" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -176,6 +198,8 @@
       <workItem from="1606121560835" duration="1833000" />
       <workItem from="1606155750362" duration="1785000" />
       <workItem from="1606190258638" duration="10000" />
+      <workItem from="1606206557985" duration="8615000" />
+      <workItem from="1606223231154" duration="1996000" />
     </task>
     <servers />
   </component>
@@ -199,13 +223,23 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="105" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1606125214752" />
-    <state x="517" y="287" key="NewPhpFileDialog" timestamp="1606061334297">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="484" y="388" key="NewPhpFileDialog" timestamp="1606225112250">
+      <screen x="0" y="0" width="1280" height="984" />
     </state>
+    <state x="484" y="388" key="NewPhpFileDialog/0.0.1280.984@0.0.1280.984" timestamp="1606225112250" />
     <state x="517" y="287" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1606061334297" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1606061274278">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="457" y="405" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606196675789">
+      <screen x="0" y="0" width="1280" height="984" />
     </state>
+    <state x="457" y="405" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.984@0.0.1280.984" timestamp="1606196675789" />
+    <state x="296" y="221" key="run.anything.popup" timestamp="1606224434286">
+      <screen x="0" y="0" width="1280" height="984" />
+    </state>
+    <state x="296" y="221" key="run.anything.popup/0.0.1280.984@0.0.1280.984" timestamp="1606224434286" />
+    <state x="324" y="66" width="672" height="917" key="search.everywhere.popup" timestamp="1606200025705">
+      <screen x="0" y="0" width="1280" height="984" />
+    </state>
+    <state x="324" y="66" width="672" height="917" key="search.everywhere.popup/0.0.1280.984@0.0.1280.984" timestamp="1606200025705" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1606061274278" />
   </component>
 </project>

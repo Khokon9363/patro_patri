@@ -19,4 +19,8 @@ class SubMenu extends Model
     {
         return $this->belongsTo(Service::class);
     }
+    public function offer()
+    {
+        return $this->belongsTo(Offer::class);
+    }
 }

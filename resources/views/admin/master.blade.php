@@ -7,11 +7,9 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <title>{{config('app.name')}}</title>
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link
-        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
-        rel="stylesheet">
-    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="{{ asset('/admin/vendor/fontawesome-free/css/all.min.css') }}" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="{{ asset('/admin/css/sb-admin-2.min.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="http://cdn.bootcss.com/toastr.js/latest/css/toastr.min.css">
 </head>
 <body id="page-top">
@@ -88,6 +86,31 @@
                 <div id="collapsexyz" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <a class="collapse-item" href="{{ url('/admin/manage-service') }}">Manage services</a>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsegallery"
+                   aria-expanded="true" aria-controls="collapsegallery">
+                    <i class="fas fa-fw fa-cog"></i>
+                    <span>Gallery</span>
+                </a>
+                <div id="collapsegallery" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <a class="collapse-item" href="{{ url('/admin/manage-gallery-groom') }}">Manage Groom gallery</a>
+                        <a class="collapse-item" href="{{ url('/admin/manage-gallery-bride') }}">Manage Bride gallery</a>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseoffer"
+                   aria-expanded="true" aria-controls="collapseoffer">
+                    <i class="fas fa-fw fa-cog"></i>
+                    <span>Offers</span>
+                </a>
+                <div id="collapseoffer" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <a class="collapse-item" href="{{ url('/admin/manage-offer') }}">Manage Offers</a>
                     </div>
                 </div>
             </li>

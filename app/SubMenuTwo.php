@@ -10,4 +10,8 @@ class SubMenuTwo extends Model
     {
         return $this->belongsTo(SubMenu::class,'sub_menu_id','id');
     }
+    public function solution()
+    {
+        return $this->belongsTo(Solution::class);
+    }
 }

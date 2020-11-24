@@ -1,19 +1,18 @@
 @extends('admin.master')
-
 @section('content')
     <div class="container">
         <div class="col-md-12">
             <div class="card">
                 <div class="card-body">
-                    <form action="{{ url('/admin/service/store') }}" method="POST" enctype="multipart/form-data">
+                    <form action="{{ url('/admin/offer/store') }}" method="POST" enctype="multipart/form-data">
                         @csrf
                         <div class="form-row">
                             <div class="col-md-6 mb-3">
-                                <label for="validationDefault01">Service Name</label>
-                                <select class="form-control" name="service_id">
-                                    <option disabled selected> Select a Service name</option>
-                                    @foreach($serviceMenu as $service)
-                                    <option value="{{ $service->id }}">{{ $service->sub_menu }}</option>
+                                <label for="validationDefault01">Offer Name</label>
+                                <select class="form-control" name="offer_id">
+                                    <option disabled selected> Select a Offer name</option>
+                                    @foreach($offerMenu as $offer)
+                                        <option value="{{ $offer->id }}">{{ $offer->sub_menu }}</option>
                                     @endforeach
                                 </select>
                             </div>
@@ -32,43 +31,43 @@
                                 <input type="file" class="form-control" name="image" id="validationDefault05" required>
                             </div>
                         </div>
-                        <button class="btn btn-primary" type="submit">Save Service</button>
+                        <button class="btn btn-primary" type="submit">Save Offer</button>
                     </form>
                 </div>
             </div>
             <div class="card">
                 <div class="card-body">
-                    <div class="card-header">Service table</div>
+                    <div class="card-header">Offer table</div>
                 </div>
                 <table class="table table-bordered text-center">
                     <thead>
-                        <tr>
-                            <th>SL</th>
-                            <th>Service Name</th>
-                            <th>Title</th>
-                            <th>Description</th>
-                            <th>Image</th>
-                            <th>Action</th>
-                        </tr>
+                    <tr>
+                        <th>SL</th>
+                        <th>Gallery Name</th>
+                        <th>Title</th>
+                        <th>Description</th>
+                        <th>Image</th>
+                        <th>Action</th>
+                    </tr>
                     </thead>
                     <tbody>
-                    @foreach($serviceList as $key => $service)
+                    @foreach($offerList as $key => $offer)
                         <tr>
                             <td>{{ $key+1 }}</td>
                             <td>
-                                @if(!empty($service->subMenuService->sub_menu))
-                                {{ $service->subMenuService->sub_menu }}
+                                @if(!empty($offer->subMenuOffer->sub_menu))
+                                    {{ $offer->subMenuOffer->sub_menu }}
                                 @else
-                                    <span>No Sub manu Found</span>
+                                    <span>No Sub menu Found</span>
                                 @endif
                             </td>
-                            <td>{{ $service->title }}</td>
-                            <td onclick="alert('{{ $service->description }}');">Click Here !</td>
+                            <td>{{ $offer->title }}</td>
+                            <td onclick="alert('{{ $offer->description }}');">Click Here !</td>
                             <td>
-                                <img src="{{ asset('/image/'.$service->image) }}" height="50" width="50">
+                                <img src="{{ asset('/image/'.$offer->image) }}" height="50" width="50">
                             </td>
                             <td>
-                                <a href="{{ url('/admin/service/delete/'.$service->id) }}" onclick="return confirm('Are you sure ?')" class="btn btn-sm btn-danger">Delete</a>
+                                <a href="{{ url('/admin/offer/delete/'.$offer->id) }}" onclick="return confirm('Are you sure ?')" class="btn btn-sm btn-danger">Delete</a>
                             </td>
                         </tr>
                     @endforeach
