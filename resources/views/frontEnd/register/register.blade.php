@@ -18,7 +18,7 @@
                                         <div class="wpb_single_image wpb_content_element vc_align_center">
                                             <div class="row">
                                                 <div class="col-md-12">
-                                                    <div class="srch_frm srch_from_mobile" style="margin-left: 352px;margin-top: 179px;">
+                                                    <div class="srch_frm srch_from_mobile" style="margin-left: 344px;margin-top: 88px;">
                                                         <form action="" method="post">
                                                             <div class="form-row">
                                                                 <div class="col-md-12">
@@ -78,7 +78,30 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <button class="info" style="color:blue;margin-left:134px;padding:8px;">Register</button>
+                                                            <div class="form-row">
+                                                                <div class="col-md-12">
+                                                                    <div class="form-group">
+                                                                        <label for="dob_m">Religion&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</label>
+                                                                        <input type="text" placeholder="Religion">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-row">
+                                                                <div class="col-md-12">
+                                                                    <div class="form-group">
+                                                                        <label for="dob_m">Present Status :</label>
+                                                                        <select>
+                                                                            <option>Single</option>
+                                                                            <option>Married</option>
+                                                                            <option>Divorced</option>
+                                                                            <option>Widowed</option>
+                                                                            <option>Separated</option>
+                                                                            <option>Married</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <button class="info" style="border:none;outline:none;color:blue;margin-left:134px;padding:8px;">Next</button>
                                                         </form>
                                                     </div>
                                                 </div>

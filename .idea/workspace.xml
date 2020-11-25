@@ -19,7 +19,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b58e6663-5514-46e2-82ef-9a04e53325c0" name="Default Changelist" comment="" />
+    <list default="true" id="b58e6663-5514-46e2-82ef-9a04e53325c0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/frontEnd/register/one.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/frontEnd/register/three.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/frontEnd/register/two.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/FrontEndController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/FrontEndController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontEnd/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontEnd/register/register.blade.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -155,6 +162,9 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\xampp\htdocs\patro_patri\resources\views\frontEnd\register" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\xampp\htdocs\patro_patri\resources\views\frontEnd" />
     </key>
@@ -180,6 +190,8 @@
       <workItem from="1606190258638" duration="10000" />
       <workItem from="1606206557985" duration="8615000" />
       <workItem from="1606223231154" duration="24200000" />
+      <workItem from="1606278961293" duration="64000" />
+      <workItem from="1606281102890" duration="6330000" />
     </task>
     <servers />
   </component>
@@ -203,10 +215,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="105" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1606125214752" />
-    <state x="484" y="388" key="NewPhpFileDialog" timestamp="1606236970910">
+    <state x="484" y="388" key="NewPhpFileDialog" timestamp="1606284232280">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state x="484" y="388" key="NewPhpFileDialog/0.0.1280.984@0.0.1280.984" timestamp="1606236970910" />
+    <state x="484" y="388" key="NewPhpFileDialog/0.0.1280.984@0.0.1280.984" timestamp="1606284232280" />
     <state x="517" y="287" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1606061334297" />
     <state x="457" y="405" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606196675789">
       <screen x="0" y="0" width="1280" height="984" />

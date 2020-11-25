@@ -42,7 +42,7 @@ class FrontEndController extends Controller
         $firstMenus = MainMenu::skip(0)->take(2)->get();
         $menus = MainMenu::with('subMenu')->skip(3)->take(3)->get();
         $galleryMenus = MainMenu::with('subMenu')->skip(2)->take(1)->get();
-        return view('frontEnd.register',compact('social','firstMenus','menus','galleryMenus'));
+        return view('frontEnd.register.register',compact('social','firstMenus','menus','galleryMenus'));
     }
     public function login()
     {
